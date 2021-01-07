@@ -11,8 +11,10 @@ const UpdateProfile = () => {
     const { updateEmail, updatePassword, currentUser } = useAuth();
     const history = useHistory();
 
+    
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
